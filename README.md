@@ -1,4 +1,5 @@
 # travis-vue-test
+[![Build Status](https://travis-ci.com/progeras/travis-vue-test.svg?branch=master)](https://travis-ci.com/progeras/travis-vue-test)
 
 ## Project setup
 ```
