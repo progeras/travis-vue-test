@@ -1,6 +1,6 @@
 # travis-vue-test
 [![Build Status](https://travis-ci.com/progeras/travis-vue-test.svg?branch=master)](https://travis-ci.com/progeras/travis-vue-test)
-
+[![Coverage Status](https://coveralls.io/repos/github/progeras/travis-vue-test/badge.svg?branch=master)](https://coveralls.io/github/progeras/travis-vue-test?branch=master)
 ## Project setup
 ```
 yarn install
