@@ -1,10 +1,15 @@
 language: node_js
 node_js:
-  - 8
+- 8
 cache:
   directories:
-    - node_modules
+  - node_modules
 script:
-  - npm run test:unit
+- npm run test:unit
 after_script:
-  - cat ./coverage/lcov.info | coveralls
+- cat ./coverage/lcov.info | coveralls
+deploy:
+  app: usnie-ci-test
+  provider: heroku
+  api_key:
+    secure: CD/dXap9vTxSG6i0PJbwi+TMan9iA49JTlBdv/Bd12buQeYANa7IS/bJ/1RGJfwxho0AxkSq5v50Zf1cq1U4NUnzZO6AgBMvEOp8QDfl027oMSgK/+iQ6tGg3SJ6O2Bh/BueRK/qEkxCEYViJPdeecVY36kJ3LpUzUQBsRtMojnqEZUWKNUl3aPJA3GpKeSPNYPudGgiJBP/x3/3CNUPRILeelZxsYWt2V21U04RFCK8klUKOEottIQOzUh9NSteaxR5JSaPJuTtgUGMEWWz08eSopycFMkzDa7jDnkGS6E7YuF/GrC9Sd/CNST9O+5qEckEoVPYuhVNI73fdfrf08JU+E77fntJiOmM3iaaAs6Xd7FrbZYccTU/gqNo+J5uOXVmRZWhsyHP9q+dby4VJsoc+WtGFS7Qd3lb6Ar290XiK8Ntgdf/qErFm3jeGaC7ZjiMJVDiHnDvEvMPYXP50dDK0NSzHn2DzPvPEX4Lgi+i4Ya2Q37TBXAFRMPPW5zDMFmPQHqjG6ReEBdVXm1yH3wU3QVk64U1Ii1ZtBAQ85HwovAs41izDFrxx7OADkotkhPTVq3tFDbWXmlFs3bBha5eiuWgd1C/Ulupu06aXG4yHZdrDED3VDXLRrlWAgBm5USSWCDB/jQffUmsgLSpGyU7pQNAGpdglD3quDtbZ6Y=
